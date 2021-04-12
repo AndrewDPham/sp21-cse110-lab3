@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang=”en”>
+<html lang="en">
     <head>
         <title>Andrew's Journal</title>
         <meta charset="UTF-8">
@@ -43,7 +43,7 @@
                     </ol>
                 <h3>Entry:</h3>
                 <p> The day was <b>great</b>. I was able to meet my <i>friend</i>.</p>
-                <img src="./images/Happy.jpg" width="300" height="300">
+                <img src="./images/Happy.jpg" alt="happy face" width="300" height="300">
             </section>
             <hr>
             <section id="journal2">
@@ -113,6 +113,60 @@
                 <video width="400" height="300" controls>
                     <source src="./media/Quick_Video.mp4" type="video/mp4">
                 </video>
+            </div>
+
+            <div id="entry-form">
+                <form>
+                    <fieldset>
+                        <legend>Create a new entry:</legend>
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+                        <br>
+                        <p>Productive or Unproductive?</p>
+                        <input type="radio" id="productive" name="productivity" value="productive">
+                        <label for="productive">Productive</label>
+                        <br>
+                        <input type="radio" id="unproductive" name="productivity" value="unproductive">
+                        <label for="unproductive">Unproductive</label>
+                        <p>Daily Activity:</p>
+                        <input type="checkbox" id="sleep" name="sleep" value="sleep">
+                        <label for="sleep">Sleep Adequately</label>
+                        <br>
+                        <input type="checkbox" id="exercise" name="exercise" value="exercise">
+                        <label for="exercise">Exercise</label>
+                        <br>
+                        <input type="checkbox" id="leetcode" name="leetcode" value="leetcode">
+                        <label for="leetcode">LeetCode</label>
+                        <br>
+                        <br>
+                        <label for="mood">Today's Mood</label>
+                        <input type="text" id="mood" name="mood">
+                        <br>
+                        <br>
+                        <label for="whoyoumet">Who did you meet?</label>
+                        <input list="who" id="whoyoumet" name="whoyoumet">
+                        <br>
+                        <br>
+                        <datalist id="who">
+                            <option value="dad"></option>
+                            <option value="mom"></option>
+                            <option value="brother"></option>
+                            <option value="sister"></option>
+                        </datalist>
+                        <label for="hourswasted">Hours Wasted?</label>
+                        <select name="hourswasted" id="hourswasted">
+                            <option value ="one">1</option>
+                            <option value ="two">2</option>
+                            <option value ="three">3</option>
+                            <option value ="four">4</option>
+                            <option value ="fiveplus">5+</option>
+                        </select>
+                        <br>
+                        <br>
+                        <textarea id="entry" placeholder="How did you feel today?"></textarea>
+                    </fieldset>
+                    <button id="submit-button" type="submit" form="add-entry">Add Entry</button>
+                </form>
             </div>
         </main>
         <footer>
