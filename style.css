@@ -1,4 +1,14 @@
 /* Style for the page */
+
+@font-face{
+    font-family: Roboto;
+    src: url(fonts/Roboto.ttf);
+}
+
+* {
+    text-align:left;
+}
+
 body{
     background-color: #89CFF0;
     color:hsl(0, 0, 0);
@@ -10,6 +20,24 @@ h1{
     text-decoration: underline;
 }
 
+h2, h3{
+    color: black;
+    text-align: left;
+}
+
+.navigation{
+    font-family: Roboto;
+    background-color: rgb(255, 255, 255);
+    border-style: double;
+    border-color: black;
+    border-width: 5pt;
+    text-align: center;
+    height: 3vh;
+    width: 75vw;
+    position: relative;
+    margin: auto;
+}
+
 #journal1{
     background-color: rgb(255, 255, 255);
     border-style: double;
@@ -18,4 +46,42 @@ h1{
     border-radius: 10px 10px;
     margin: 2pc 4pc 2pc 4pc;
     padding: 2pc 4pc 2pc 4pc;
+    display: inline-block;
+    position: static;
 }
+
+#journal2{
+    background-color: rgb(255, 255, 255);
+    border-style: double;
+    border-color: black;
+    border-width: 5pt;
+    border-radius: 10px 10px;
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+    margin-left: 4pc;
+    margin-right: 4pc;
+    padding-top: 2pc;
+    padding-bottom: 2pc;
+    padding-left: 4pc;
+    padding-right: 4pc;
+    display: inline-block;
+    position: static;
+}
+
+#multimedia {
+    display: flex;
+}
+
+img[alt]{
+    border-color: black;
+    border-style: dashed;
+}
+
+a:hover{
+    color: forestgreen;
+}
+
+a:active{
+    color:fuchsia;
+}
+
