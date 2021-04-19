@@ -1,0 +1,21 @@
+/* Style for the page */
+body{
+    background-color: #89CFF0;
+    color:hsl(0, 0, 0);
+}
+
+h1{
+    color: black;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#journal1{
+    background-color: rgb(255, 255, 255);
+    border-style: double;
+    border-color: black;
+    border-width: 5pt;
+    border-radius: 10px 10px;
+    margin: 2pc 4pc 2pc 4pc;
+    padding: 2pc 4pc 2pc 4pc;
+}
