@@ -50,7 +50,7 @@ h2, h3{
     position: static;
 }
 
-#journal2{
+#journal2, #journal3{
     background-color: rgb(255, 255, 255);
     border-style: double;
     border-color: black;
@@ -64,15 +64,22 @@ h2, h3{
     padding-bottom: 2pc;
     padding-left: 4pc;
     padding-right: 4pc;
-    display: inline-block;
+    display: grid;
+    grid-template-columns: .5fr;
+    grid-column-gap: 5px;
+    grid-template-rows: .5fr;
+    place-items: auto center;
     position: static;
 }
 
 #multimedia {
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: row;
 }
 
-img[alt]{
+img[alt="happy face"]{
     border-color: black;
     border-style: dashed;
 }
@@ -85,3 +92,33 @@ a:active{
     color:fuchsia;
 }
 
+details p {
+    color: blueviolet;
+}
+
+details > summary {
+    color: gray;
+}
+
+h2 + h3 {
+    color: orangered;
+    text-decoration: overline;
+}
+
+ul ~ h3 {
+    color: midnightblue;
+    text-decoration: underline;
+}
+
+form.formclass{
+    background-color: lightgray;
+    display: block;
+    border-style: double;
+    border-color: black;
+    border-width: 1ch;
+    border-radius: 10px 10px;
+}
+
+.media {
+    margin: auto;
+}

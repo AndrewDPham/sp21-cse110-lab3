@@ -8,6 +8,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/ico" href="./images/favicon.ico">
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <style>
+            /* media query for responsiveness */
+            @media screen and (min-width: 640px) {
+                header {
+                    min-width: 600px;
+                }
+
+                img{
+                    max-width: 100px;
+                    max-height: 100px;
+                }
+            }
+        </style>
     </head>
     <body>
         <header>
@@ -32,7 +46,7 @@
                 </ul>
                 <h3>LowLights:</h3>
                 <ul>
-                    <li>
+                    <li style="color: red;">
                         Friend is going back to Georgia
                     </li>
                 </ul>
@@ -105,19 +119,27 @@
               </details>
             <hr>
             <div id="multimedia">
-                <h2>Audio: GettysBurg</h2>
-                <audio controls>
-                    <source src="./media/gettysburg10.wav" type="audio/wav">
-                </audio>
+                <div class="media">
+                    <h2>Audio: GettysBurg</h2>
+                    <audio controls>
+                        <source src="./media/gettysburg10.wav" type="audio/wav">
+                    </audio>
+                </div>
                 <br>
-                <h2>Video: My Screen</h2>
-                <video width="400" height="300" controls>
-                    <source src="./media/Quick_Video.mp4" type="video/mp4">
-                </video>
+                <div class="media">
+                    <h2>Video: My Screen</h2>
+                    <video width="400" height="300" controls>
+                        <source src="./media/Quick_Video.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="media">
+                    <h2>Image: My Team</h2>
+                    <img src="./images/coolbeans.jfif" alt="coolbeans" width="400" height="300">
+                </div>
             </div>
 
             <div id="entry-form">
-                <form id="add-entry">
+                <form id="add-entry" class="formclass">
                     <fieldset>
                         <legend>Create a new entry:</legend>
                         <label for="date">Date:</label>
